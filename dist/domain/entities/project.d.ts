@@ -1,0 +1,10 @@
+import { IProject } from "../interface/project.interface";
+import { Task } from "./task";
+import { User } from "./user";
+export declare class Project implements IProject {
+    id: number;
+    name: string;
+    description: string;
+    user: User;
+    tasks: Task[];
+}

@@ -1,0 +1,10 @@
+import { ITask } from "../interface/task.interface";
+import { Project } from "./project";
+import { User } from "./user";
+export declare class Task implements ITask {
+    id: number;
+    name: string;
+    status: "pending" | "completed";
+    project: Project;
+    user: User;
+}
